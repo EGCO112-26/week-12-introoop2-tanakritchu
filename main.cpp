@@ -18,15 +18,15 @@ int main(int argc, char* argv[]) {
   int i,age;
   string n;
    // 1. Ask for N names and N age using cin
-     for(i = 0; i < N; i++){
-        cout << "Enter name: ";
-        cin >> n;
-        cout << "Enter age: ";
-        cin >> age;
+    //  for(i = 0; i < N; i++){
+    //     cout << "Enter name: ";
+    //     cin >> n;
+    //     cout << "Enter age: ";
+    //     cin >> age;
 
-        a[i].set_name(n);
-        a[i].set_age(age);
-    }
+    //     a[i].set_name(n);
+    //     a[i].set_age(age);
+    // }
 
   //2. Print name and age of all N ppl
   for(i = 0; i < N; i++){
@@ -62,7 +62,6 @@ for(i = 0; i < N; i++){
             a[i].set_age(atoi(argv[2 + 2*i]));
         }
 
-        cout << "\nFrom argv:\n";
         for(i = 0; i < N; i++){
             a[i].print_name();
             cout << " " << a[i].get_age() << endl;
